@@ -9,12 +9,15 @@ Original file is located at
 
 import pandas as pd
 
-# Assuming 'air_quality_combined.csv' is the file you want to read
-file_path = 'air_quality_combined.csv'
+import pandas as pd
+
+# Assuming 'air_quality_combined.csv.gz' is the file you want to read
+file_path = 'air_quality_combined.csv.gz'
 
 try:
     # Read the CSV file into a pandas DataFrame
-    df_air_quality = pd.read_csv(file_path)
+    df_air_quality = pd.read_csv(file_path,
+                                 compression='gzip') # Add compression parameter for gzip files
 
     print(f"Dataset loaded successfully from '{file_path}':")
     # Display the first 5 rows of the DataFrame
@@ -29,7 +32,7 @@ except FileNotFoundError:
           "Please ensure the CSV is correctly uploaded and the path is accurate.")
 except Exception as e:
     print(f"An error occurred while loading the dataset: {e}")
-
+    
 !pip install streamlit
 
 import streamlit as st
