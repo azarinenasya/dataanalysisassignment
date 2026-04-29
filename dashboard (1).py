@@ -43,7 +43,7 @@ import seaborn as sns
 # Jika tidak, Anda perlu memuatnya di sini, contoh:
 # df_air_quality = pd.read_csv('/content/air_quality_combined.csv')
 
-df = df_air_quality.copy() # Gunakan salinan untuk menghindari modifikasi df_air_quality asli
+df = df_air_quality.copy()
 
 # Mengubah kolom datetime menjadi tipe datetime
 df['datetime'] = pd.to_datetime(df['datetime'])
