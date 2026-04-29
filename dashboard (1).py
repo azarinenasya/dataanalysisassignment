@@ -7,9 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1XyvdV1cjEXh8f3djp-JOdMCAm2xmzDFW
 """
 
+import streamlit as st
 import pandas as pd
-
-import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Assuming 'air_quality_combined.csv.gz' is the file you want to read
 file_path = 'air_quality_combined.csv.gz'
@@ -32,11 +33,6 @@ except FileNotFoundError:
           "Please ensure the CSV is correctly uploaded and the path is accurate.")
 except Exception as e:
     print(f"An error occurred while loading the dataset: {e}")
-    
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Memuat data
 # Asumsikan df_air_quality sudah dimuat dari sel sebelumnya
