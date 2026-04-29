@@ -57,7 +57,7 @@ Keterangan:
 """
 
 # Impor library
-!pip install gdown
+pip install gdown
 
 import gdown
 import zipfile
