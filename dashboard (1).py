@@ -37,10 +37,11 @@ except Exception as e:
 # Memuat data
 # Asumsikan df_air_quality sudah dimuat dari sel sebelumnya
 # Jika tidak, Anda perlu memuatnya di sini, contoh:
-# df_air_quality = pd.read_csv('/content/air_quality_combined.csv')
+
+df_air_quality = pd.read_csv('air_quality_combined.zip')
 
 # Mengubah kolom datetime menjadi tipe datetime
-df['datetime'] = pd.to_datetime(df['datetime'])
+df_air_quality['datetime'] = pd.to_datetime(df['datetime'])
 
 # Menyiapkan Streamlit dashboard
 st.set_page_config(page_title="Dashboard Kualitas Udara", layout="wide")
