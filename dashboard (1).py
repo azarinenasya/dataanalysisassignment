@@ -10,7 +10,7 @@ Original file is located at
 import pandas as pd
 
 # Assuming 'air_quality_combined.csv' is the file you want to read
-file_path = '/content/air_quality_combined.csv'
+file_path = 'air_quality_combined.csv'
 
 try:
     # Read the CSV file into a pandas DataFrame
