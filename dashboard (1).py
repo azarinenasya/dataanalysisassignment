@@ -38,7 +38,7 @@ except Exception as e:
 # Asumsikan df_air_quality sudah dimuat dari sel sebelumnya
 # Jika tidak, Anda perlu memuatnya di sini, contoh:
 
-df_air_quality = pd.read_csv('air_quality_combined.zip')
+df_air_quality = pd.read_csv('air_quality_combined.csv.gzip')
 
 # Mengubah kolom datetime menjadi tipe datetime
 df_air_quality['datetime'] = pd.to_datetime(df['datetime'])
