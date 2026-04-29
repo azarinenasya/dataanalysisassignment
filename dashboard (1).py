@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Assuming 'air_quality_combined.csv.gz' is the file you want to read
-file_path = 'air_quality_combined.csv.gz'
+file_path = 'air_quality_combined.zip'
 
 try:
     # Read the CSV file into a pandas DataFrame
@@ -38,7 +38,7 @@ except Exception as e:
 # Asumsikan df_air_quality sudah dimuat dari sel sebelumnya
 # Jika tidak, Anda perlu memuatnya di sini, contoh:
 
-df_air_quality = pd.read_csv('air_quality_combined.csv.gzip', compression='gzip')
+df_air_quality = pd.read_csv('air_quality_combined.csv', compression='gzip')
 
 # Mengubah kolom datetime menjadi tipe datetime
 df_air_quality['datetime'] = pd.to_datetime(df['datetime'])
