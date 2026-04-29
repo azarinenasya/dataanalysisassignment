@@ -57,7 +57,8 @@ Keterangan:
 """
 
 # Impor library
-import gdown
+!pip install gdown
+
 import zipfile
 import os
 import pandas as pd
